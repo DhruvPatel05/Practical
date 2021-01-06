@@ -38,7 +38,7 @@ class ListTableViewCell: UITableViewCell
     {
         self.newsImage?.sd_setImage(with: URL.init(string: article?.urlToImage ?? "")) { (image, error, cache, urls) in
             if (error != nil) {
-                self.newsImage?.image = #imageLiteral(resourceName: "icn_Default")
+                self.newsImage?.image = UIImage.init(named: "default_Image")
             } else {
                 self.newsImage.image = image
             }
